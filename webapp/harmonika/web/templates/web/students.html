@@ -1,0 +1,9 @@
+{% if students %}
+    <ul>
+    {% for student in students %}
+        <li><a href="/student/{{ student.slug }}/">{{ student.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No students have gaps.</p>
+{% endif %}
